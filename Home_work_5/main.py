@@ -34,14 +34,13 @@ def player():
         return 0
 
 candy = 100
-lottery_result = random.randint(0, 1)
+#lottery_result = random.randint(0, 1)
 
 
 while candy > 0:
     try:
-        if lottery_result == 0:
-            candy -= player()
-            print(f"осталось {candy} конфет")
+        candy -= player()
+        print(f"осталось {candy} конфет")
 
         if candy == 0:
             print("Победил игрок")
