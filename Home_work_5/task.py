@@ -33,7 +33,7 @@ def player():
     else:
         return 0
 
-candy = 100
+candy = 120
 lottery_result = random.randint(0, 1)
 
 
