@@ -13,7 +13,7 @@ import random
 
 def bot_play(score):
     if score >= 60:
-        return random.randint(25,28)
+        return random.randint(25, 28)
     elif 60 >= score >= 41:
         return random.randint(1, 20)
     elif 40 >= score >= 33:
@@ -33,15 +33,14 @@ def player():
     else:
         return 0
 
-candy = 120
-lottery_result = random.randint(0, 1)
 
+candy = 2021
+# lottery_result = random.randint(0, 1)
 
 while candy > 0:
     try:
-        if lottery_result == 0:
-            candy -= player()
-            print(f"осталось {candy} конфет")
+        candy -= player()
+        print(f"осталось {candy} конфет")
 
         if candy == 0:
             print("Победил игрок")
@@ -60,5 +59,3 @@ while candy > 0:
 
     except:
         print("Вводите только целые цисла")
-
-
